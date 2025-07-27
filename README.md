@@ -40,6 +40,7 @@ This project showcases how to turn raw data into meaningful insights using scala
 ---
 
 ## 🗂️ Project Structure
+![DataPipeline](pipeline.png)
 gcp-data-pipeline-project/
 │
 ├── data/  dummy_employee_data.csv                      # Contains raw and processed CSV files (mock employee data)
