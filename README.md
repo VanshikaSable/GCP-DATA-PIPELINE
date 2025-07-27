@@ -40,5 +40,33 @@ This project showcases how to turn raw data into meaningful insights using scala
 ---
 
 ## 🗂️ Project Structure
+gcp-data-pipeline-project/
+│
+├── data/                        # Contains raw and processed CSV files (mock employee data)
+│
+├── src/                          # Source code for data generation and orchestration
+│   ├── generate_employee_data.py   # Generates dummy employee data with PII using Faker
+│   ├── upload_to_gcs.py            # Uploads generated data to Google Cloud Storage
+│   └── dags/
+│       └── employee_pipeline_dag.py  # Airflow DAG for scheduling pipeline tasks
+│
+├── df-pipeline/                 # Cloud Data Fusion pipeline exported JSON (pipeline.json)
+│
+├── queries/                     # SQL scripts for BigQuery analysis
+│   └── employee_kpi_query.sql     # Example query to extract KPI metrics
+│
+├── dashboards/                  # Looker Studio dashboard screenshots or shareable link
+│   └── kpi_dashboard.png
+│
+├── configs/                     # Config files (e.g., schema definitions, GCP configs)
+│
+├── notebooks/                   # Jupyter notebooks for data exploration or prototyping
+│
+├── requirements.txt             # Python dependencies
+├── .env.example                 # Sample environment variables file
+├── Dockerfile                   # Optional: for containerizing pipeline components
+├── architecture-diagram.png     # Project architecture visual
+└── README.md                    # Project documentation
+
 
 
