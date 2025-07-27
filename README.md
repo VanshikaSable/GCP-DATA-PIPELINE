@@ -43,32 +43,32 @@ This project showcases how to turn raw data into meaningful insights using scala
 ![DataPipeline](pipeline.png)
 gcp-data-pipeline-project/
 │
-├── data/  dummy_employee_data.csv                      # Contains raw and processed CSV files (mock employee data)
+├── data/  dummy_employee_data.csv                    
 
 
 
 │
-├── src/                          # Source code for data generation and orchestration
-│   ├── dummy_employees.py   # Generates dummy employee data with PII using Faker
-│   ├── upload_to_gcs.py            # Uploads generated data to Google Cloud Storage
+├── src/                         
+│   ├── dummy_employees.py   
+│   ├── upload_to_gcs.py           
 │   └── dags/
-│       └── dag.py  # Airflow DAG for scheduling pipeline tasks
+│       └── dag.py  
 
 
 
 │
-├── df-pipeline/pipeline.png                 # Cloud Data Fusion pipeline exported JSON (pipeline.json)
+├── df-pipeline/pipeline.png                
 
 
 
 │
-├── dashboards/                  # Looker Studio dashboard screenshots or shareable link
-│   └── kpi_dashboard.png
+├── dashboards/                 
+│   └── ![looker_studio](Analysis.png)
 
 
 
-├── architecture-diagram.png     # Project architecture visual
-└── README.md                    # Project documentation
+├── architecture-diagram.png     
+└── README.md                    
 
 
 
